@@ -19,13 +19,15 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/contenedor_mensaje"
             android:layout_alignParentTop="true"
-            android:layout_marginBottom="476dp">
+            android:layout_marginBottom="30dp">
 
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+
+                />
 
             <TextView
                 android:id="@+id/emptyview_text"
@@ -47,9 +49,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
            >
 
             <EditText
+                android:id="@+id/mensaje_enviado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
@@ -63,6 +67,7 @@
                 android:textColor="@color/black"/>
 
             <ImageView
+                android:id="@+id/enviar_mensaje"
                 android:layout_width="wrap_content"
                 android:layout_weight="0"
                 android:layout_height="match_parent"
